@@ -1,23 +1,49 @@
 # Python Async Microservice Example
 
-This repository contains a code example demonstrating my approach to building asynchronous microservices in Python.
+A small, anonymized example of an asynchronous Python service for integrating with external APIs.
 
-## What this code demonstrates
+The repository demonstrates patterns I use when working with API-driven backend services: asynchronous I/O, object-oriented design, authentication, retries, error handling and task orchestration.
 
-- **Async/await architecture** for non-blocking I/O operations
-- **Clean OOP design** with inheritance and separation of concerns
-- **External API integration** with authentication and error handling
-- **Task orchestration** with status tracking and retry logic
-- **Structured logging** and custom exceptions
+## What this example demonstrates
+
+* **Asynchronous I/O** with `asyncio` and `aiohttp`
+* **OOP and separation of responsibilities**
+* **External API integration**
+* **Authentication** with OAuth 2.0 / JWT
+* **Task orchestration** and status tracking
+* **Retry logic** implemented with decorators
+* **Custom exceptions**
+* **Structured logging**
+* Handling API errors and unsuccessful requests
+
+## Project structure
+
+```text
+code-samples/
+├── example_quest.py
+├── social_quest_handler.py
+└── README.md
+```
+
+The example is intentionally small. The focus is on the implementation patterns rather than on building a complete standalone application.
 
 ## Technologies
 
-- Python 3.12+
-- asyncio / aiohttp
-- REST API integration
-- OAuth 2.0 / JWT
-- Custom decorators (retry logic)
+* Python 3.12+
+* asyncio
+* aiohttp
+* REST API
+* OAuth 2.0 / JWT
 
 ## Context
 
-This is a cleaned, anonymized version of a production microservice I developed for a social platform automation project. All sensitive data (API keys, real endpoints, project names) have been replaced with placeholders.
+This code is based on a production microservice developed for a social-platform automation project.
+
+The public version has been cleaned and anonymized:
+
+* sensitive project names were removed
+* real API endpoints were replaced with placeholders
+* credentials and other private data were removed
+* the code was adapted to work as a standalone example
+
+The repository is intended to demonstrate the structure and engineering approaches used in the original service, rather than reproduce the original project in full.
